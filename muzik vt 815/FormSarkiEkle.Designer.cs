@@ -69,10 +69,10 @@
             // 
             this.cmbTur.FormattingEnabled = true;
             this.cmbTur.Items.AddRange(new object[] {
-            "Pop ",
+            "Pop",
             "Rock",
-            "Türk Halk Müziği",
             "Arabesk",
+            "Türk Halk Müziği",
             "Rap"});
             this.cmbTur.Location = new System.Drawing.Point(121, 180);
             this.cmbTur.Name = "cmbTur";
@@ -171,6 +171,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(335, 405);
             this.Controls.Add(this.lblSure);
             this.Controls.Add(this.txtSure);
@@ -186,6 +187,7 @@
             this.Controls.Add(this.txtYil);
             this.Controls.Add(this.txtSanatci);
             this.Controls.Add(this.txtAd);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "FormSarkiEkle";
             this.Text = "FormSarkiEkle";
             this.ResumeLayout(false);

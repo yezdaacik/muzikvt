@@ -24,7 +24,7 @@ namespace muzik_vt_815
             using (MySqlConnection baglan = new MySqlConnection(baglantimetin))
             {
                 baglan.Open();
-                string sorgu = "INSERT INTO sarkilar VALUES(NULL,@sarkiAd,@sanatciAd,@yil,@tur,@sure,@tarih,@favori;";
+                string sorgu = "INSERT INTO sarkilar VALUES(NULL,@sarkiAd,@sanatciAd,@yil,@tur,@sure,@tarih,@favori)";
 
                 MySqlCommand cmd = new MySqlCommand(sorgu, baglan);
                 cmd.Parameters.AddWithValue("@sarkiAd", txtAd.Text);
@@ -35,13 +35,14 @@ namespace muzik_vt_815
                 cmd.Parameters.AddWithValue("@tarih", dtTarih.Value);
                 cmd.Parameters.AddWithValue("@favori", cbFavori.Checked);
 
-            if (cmd.ExecuteNonQuery() >0)
+            if (cmd.ExecuteNonQuery() > 0)
             {
-                    MessageBox.Show("Kayıt Eklendi");
+                MessageBox.Show("Kayıt Eklendi");
             }
 
             }
 
         }
+
     }
 }
