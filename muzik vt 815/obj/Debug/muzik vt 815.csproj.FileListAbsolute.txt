@@ -1,0 +1,19 @@
+C:\Users\User\Desktop\KORUMASIZ\Yezda Açık\muzik vt 815\muzik vt 815\bin\Debug\muzik vt 815.exe.config
+C:\Users\User\Desktop\KORUMASIZ\Yezda Açık\muzik vt 815\muzik vt 815\bin\Debug\muzik vt 815.exe
+C:\Users\User\Desktop\KORUMASIZ\Yezda Açık\muzik vt 815\muzik vt 815\bin\Debug\muzik vt 815.pdb
+C:\Users\User\Desktop\KORUMASIZ\Yezda Açık\muzik vt 815\muzik vt 815\bin\Debug\MySql.Data.dll
+C:\Users\User\Desktop\KORUMASIZ\Yezda Açık\muzik vt 815\muzik vt 815\bin\Debug\System.Memory.dll
+C:\Users\User\Desktop\KORUMASIZ\Yezda Açık\muzik vt 815\muzik vt 815\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\User\Desktop\KORUMASIZ\Yezda Açık\muzik vt 815\muzik vt 815\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\User\Desktop\KORUMASIZ\Yezda Açık\muzik vt 815\muzik vt 815\bin\Debug\System.Buffers.dll
+C:\Users\User\Desktop\KORUMASIZ\Yezda Açık\muzik vt 815\muzik vt 815\obj\Debug\muzik vt 815.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\KORUMASIZ\Yezda Açık\muzik vt 815\muzik vt 815\obj\Debug\muzik vt 815.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Desktop\KORUMASIZ\Yezda Açık\muzik vt 815\muzik vt 815\obj\Debug\muzik_vt_815.Form1.resources
+C:\Users\User\Desktop\KORUMASIZ\Yezda Açık\muzik vt 815\muzik vt 815\obj\Debug\muzik_vt_815.FormTumSarkilar.resources
+C:\Users\User\Desktop\KORUMASIZ\Yezda Açık\muzik vt 815\muzik vt 815\obj\Debug\muzik_vt_815.Properties.Resources.resources
+C:\Users\User\Desktop\KORUMASIZ\Yezda Açık\muzik vt 815\muzik vt 815\obj\Debug\muzik vt 815.csproj.GenerateResource.cache
+C:\Users\User\Desktop\KORUMASIZ\Yezda Açık\muzik vt 815\muzik vt 815\obj\Debug\muzik vt 815.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\KORUMASIZ\Yezda Açık\muzik vt 815\muzik vt 815\obj\Debug\muzik vt 815.csproj.CopyComplete
+C:\Users\User\Desktop\KORUMASIZ\Yezda Açık\muzik vt 815\muzik vt 815\obj\Debug\muzik vt 815.exe
+C:\Users\User\Desktop\KORUMASIZ\Yezda Açık\muzik vt 815\muzik vt 815\obj\Debug\muzik vt 815.pdb
+C:\Users\User\Desktop\KORUMASIZ\Yezda Açık\muzik vt 815\muzik vt 815\obj\Debug\muzik_vt_815.FormSarkiEkle.resources
