@@ -30,7 +30,7 @@ namespace muzik_vt_815
                 cmd.Parameters.AddWithValue("@sarkiAd", txtAd.Text);
                 cmd.Parameters.AddWithValue("@sanatciAd", txtSanatci.Text);
                 cmd.Parameters.AddWithValue("@yil", txtYil.Text);
-                cmd.Parameters.AddWithValue("@tur", cmbTur.Text);
+                cmd.Parameters.AddWithValue("@tur", cmbTur.SelectedValue);
                 cmd.Parameters.AddWithValue("@sure", txtSure.Text);
                 cmd.Parameters.AddWithValue("@tarih", dtTarih.Value);
                 cmd.Parameters.AddWithValue("@favori", cbFavori.Checked);
@@ -44,5 +44,29 @@ namespace muzik_vt_815
 
         }
 
+        void CmbDoldur()
+        {
+            using (MySqlConnection baglan = new MySqlConnection(baglantimetin))
+            {
+                baglan.Open();
+                string sorgu = "SELECT DISTINCT tur FROM sarkilar;";
+
+                MySqlCommand cmd = new MySqlCommand(sorgu, baglan);
+                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+
+                da.Fill(dt);
+                cmbTur.DataSource = dt;
+
+                cmbTur.DisplayMember = "tur";
+                cmbTur.ValueMember = "tur";
+
+            }
+        }
+
+        private void FormSarkiEkle_Load(object sender, EventArgs e)
+        {
+            CmbDoldur();
+        }
     }
 }

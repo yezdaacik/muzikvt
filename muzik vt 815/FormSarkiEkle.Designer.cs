@@ -68,12 +68,6 @@
             // cmbTur
             // 
             this.cmbTur.FormattingEnabled = true;
-            this.cmbTur.Items.AddRange(new object[] {
-            "Pop",
-            "Rock",
-            "Arabesk",
-            "Türk Halk Müziği",
-            "Rap"});
             this.cmbTur.Location = new System.Drawing.Point(121, 180);
             this.cmbTur.Name = "cmbTur";
             this.cmbTur.Size = new System.Drawing.Size(155, 21);
@@ -82,36 +76,40 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(51, 31);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(48, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 13);
+            this.label1.Size = new System.Drawing.Size(61, 16);
             this.label1.TabIndex = 6;
             this.label1.Text = "Şarkı Adı";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(57, 65);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Location = new System.Drawing.Point(57, 63);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 13);
+            this.label2.Size = new System.Drawing.Size(52, 16);
             this.label2.TabIndex = 7;
             this.label2.Text = "Sanatçı";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(82, 112);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Location = new System.Drawing.Point(82, 105);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(18, 13);
+            this.label3.Size = new System.Drawing.Size(22, 16);
             this.label3.TabIndex = 8;
             this.label3.Text = "Yıl";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(77, 183);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.Location = new System.Drawing.Point(82, 181);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(23, 13);
+            this.label4.Size = new System.Drawing.Size(27, 16);
             this.label4.TabIndex = 9;
             this.label4.Text = "Tür";
             // 
@@ -125,9 +123,10 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(23, 219);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label5.Location = new System.Drawing.Point(12, 217);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(77, 13);
+            this.label5.Size = new System.Drawing.Size(97, 16);
             this.label5.TabIndex = 11;
             this.label5.Text = "Eklenme Tarihi";
             // 
@@ -154,9 +153,10 @@
             // lblSure
             // 
             this.lblSure.AutoSize = true;
-            this.lblSure.Location = new System.Drawing.Point(82, 148);
+            this.lblSure.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblSure.Location = new System.Drawing.Point(74, 142);
             this.lblSure.Name = "lblSure";
-            this.lblSure.Size = new System.Drawing.Size(29, 13);
+            this.lblSure.Size = new System.Drawing.Size(35, 16);
             this.lblSure.TabIndex = 15;
             this.lblSure.Text = "Süre";
             // 
@@ -190,6 +190,7 @@
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "FormSarkiEkle";
             this.Text = "FormSarkiEkle";
+            this.Load += new System.EventHandler(this.FormSarkiEkle_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

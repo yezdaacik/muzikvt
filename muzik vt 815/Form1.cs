@@ -28,5 +28,10 @@ namespace muzik_vt_815
             FormTumSarkilar formTumSarkilar = new FormTumSarkilar();
             formTumSarkilar.ShowDialog();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

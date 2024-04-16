@@ -35,7 +35,7 @@
             // btnEkleForm
             // 
             this.btnEkleForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnEkleForm.Location = new System.Drawing.Point(40, 54);
+            this.btnEkleForm.Location = new System.Drawing.Point(41, 54);
             this.btnEkleForm.Name = "btnEkleForm";
             this.btnEkleForm.Size = new System.Drawing.Size(153, 78);
             this.btnEkleForm.TabIndex = 0;
@@ -63,6 +63,7 @@
             this.Controls.Add(this.btnEkleForm);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
