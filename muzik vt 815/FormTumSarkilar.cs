@@ -69,5 +69,26 @@ namespace muzik_vt_815
             }
         }
 
+        private void btnGuncelle_Click(object sender, EventArgs e)
+        {
+            using (MySqlConnection baglan = new MySqlConnection(baglantimetin))
+            {
+                baglan.Open();
+                string sorgu = "UPDATE sarkilar SET ad=@sarkiad, sanatci = @sanatciad, yil = @yil, tur=@tur, sure= @sure, eklenme_tarihi = @tarih, favori= @favori WHERE id =@satirid;";
+
+                MySqlCommand cmd = new MySqlCommand(sorgu, baglan);
+                cmd.Parameters.AddWithValue("@sarkiad", txtAd.Text);
+                cmd.Parameters.AddWithValue("@sanatciad", txtSanatci.Text);
+                cmd.Parameters.AddWithValue("@yil", txtYil.Text);
+                cmd.Parameters.AddWithValue("@tur", cmbTur.SelectedValue);
+                cmd.Parameters.AddWithValue("@sure", txtSure.Text);
+                cmd.Parameters.AddWithValue("@tarih", dtTarih.Value);
+                cmd.Parameters.AddWithValue("@favori", cbFavori.Checked);
+
+            }
+        }
     }
 }
+
+
+

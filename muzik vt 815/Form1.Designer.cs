@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnTumSarkilar = new System.Windows.Forms.Button();
             this.btnEkleForm = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -36,22 +35,22 @@
             // btnTumSarkilar
             // 
             this.btnTumSarkilar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnTumSarkilar.Image = ((System.Drawing.Image)(resources.GetObject("btnTumSarkilar.Image")));
             this.btnTumSarkilar.Location = new System.Drawing.Point(218, 54);
             this.btnTumSarkilar.Name = "btnTumSarkilar";
             this.btnTumSarkilar.Size = new System.Drawing.Size(153, 78);
             this.btnTumSarkilar.TabIndex = 1;
+            this.btnTumSarkilar.Text = "Tüm Şarkılar";
             this.btnTumSarkilar.UseVisualStyleBackColor = true;
             this.btnTumSarkilar.Click += new System.EventHandler(this.btnTumSarkilar_Click);
             // 
             // btnEkleForm
             // 
             this.btnEkleForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnEkleForm.Image = ((System.Drawing.Image)(resources.GetObject("btnEkleForm.Image")));
             this.btnEkleForm.Location = new System.Drawing.Point(41, 54);
             this.btnEkleForm.Name = "btnEkleForm";
             this.btnEkleForm.Size = new System.Drawing.Size(153, 78);
             this.btnEkleForm.TabIndex = 0;
+            this.btnEkleForm.Text = "Şarkı Ekle";
             this.btnEkleForm.UseVisualStyleBackColor = true;
             this.btnEkleForm.Click += new System.EventHandler(this.btnEkleForm_Click);
             // 
