@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.dgwTumSarkilar = new System.Windows.Forms.DataGridView();
+            this.btnSil = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgwTumSarkilar)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,11 +46,22 @@
             this.dgwTumSarkilar.Size = new System.Drawing.Size(776, 258);
             this.dgwTumSarkilar.TabIndex = 0;
             // 
+            // btnSil
+            // 
+            this.btnSil.Image = global::muzik_vt_815.Properties.Resources._001_delete;
+            this.btnSil.Location = new System.Drawing.Point(702, 108);
+            this.btnSil.Name = "btnSil";
+            this.btnSil.Size = new System.Drawing.Size(86, 56);
+            this.btnSil.TabIndex = 1;
+            this.btnSil.UseVisualStyleBackColor = true;
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
+            // 
             // FormTumSarkilar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnSil);
             this.Controls.Add(this.dgwTumSarkilar);
             this.Name = "FormTumSarkilar";
             this.Text = "FormTumSarkilar";
@@ -62,5 +74,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgwTumSarkilar;
+        private System.Windows.Forms.Button btnSil;
     }
 }

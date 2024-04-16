@@ -23,6 +23,37 @@ namespace muzik_vt_815
 
         private void FormTumSarkilar_Load(object sender, EventArgs e)
         {
+            DgwDoldur();
+        }
+
+        private void btnSil_Click(object sender, EventArgs e)
+        {
+            DataGridViewRow dr = dgwTumSarkilar.SelectedRows[0];
+
+            int satirId =Convert.ToInt32(dr.Cells[0].Value);
+
+            DialogResult cevap = MessageBox.Show("Şarkıyı silmek istediğinizden emin misiniz?",
+                                                 "Şarkıyı sil", MessageBoxButtons.YesNo,
+                                                  MessageBoxIcon.Error);
+
+            if (cevap == DialogResult.Yes)
+            {
+   
+                using (MySqlConnection baglan = new MySqlConnection(baglantimetin))
+                {
+                    baglan.Open();
+                    string sorgu = "DELETE FROM sarkilar WHERE id=@satirId;";                  
+                    MySqlCommand cmd = new MySqlCommand(sorgu, baglan);
+                    cmd.Parameters.AddWithValue("@satirId", satirId);
+                    cmd.ExecuteNonQuery();
+
+                    DgwDoldur();
+                }
+            }
+        }
+
+        void DgwDoldur()
+        {
             using (MySqlConnection baglan = new MySqlConnection(baglantimetin))
             {
                 baglan.Open();
@@ -34,8 +65,9 @@ namespace muzik_vt_815
 
                 da.Fill(dt);
                 dgwTumSarkilar.DataSource = dt;
-               
+
             }
         }
+
     }
 }

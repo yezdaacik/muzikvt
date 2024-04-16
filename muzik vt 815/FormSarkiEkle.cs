@@ -41,9 +41,7 @@ namespace muzik_vt_815
             }
 
             }
-
         }
-
         void CmbDoldur()
         {
             using (MySqlConnection baglan = new MySqlConnection(baglantimetin))
