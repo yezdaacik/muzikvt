@@ -128,6 +128,32 @@ namespace muzik_vt_815
                 cmbTur.SelectedValue = dgwTumSarkilar.SelectedRows[0].Cells["tur"].Value.ToString();
             }
         }
+
+        private void dgwTumSarkilar_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnAra_Click(object sender, EventArgs e)
+        {
+            string sorgu = " SELECT * FROM sarkilar WHERE ad LIKE @aranan;";
+            if (rbSanatci.Checked)
+            {
+                sorgu = "SELECT * FROM sarkilar WHERE sanatci LIKE @aranan;";
+            }
+          
+            using (MySqlConnection baglan = new MySqlConnection(baglantimetin))
+            {
+                baglan.Open();
+                MySqlCommand cmd = new MySqlCommand(sorgu, baglan);
+                cmd.Parameters.AddWithValue("@aranan","%" + txtArama.Text + "%");
+                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dgwTumSarkilar.DataSource = dt;
+            }
+        }
     }
 }
 
