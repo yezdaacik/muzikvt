@@ -59,6 +59,7 @@
             this.dgwTumSarkilar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgwTumSarkilar.Size = new System.Drawing.Size(776, 258);
             this.dgwTumSarkilar.TabIndex = 0;
+            this.dgwTumSarkilar.SelectionChanged += new System.EventHandler(this.dgwTumSarkilar_SelectionChanged);
             // 
             // btnSil
             // 
